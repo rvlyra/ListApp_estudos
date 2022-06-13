@@ -10,7 +10,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<Contexto>(
-    options => options.UseSqlServer("Data Source=GZTVIX-BDHM01")
+    options => options.UseSqlServer("Data Source=GZTVIX-BDHM01;Integrated Security=True;")
 );
 
 var app = builder.Build();

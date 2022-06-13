@@ -7,7 +7,12 @@ namespace backend.Models
 
         public Contexto(DbContextOptions<Contexto> options) : base(options)
         {
+            
+        }
 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer("Data Source=GZTVIX-BDHM01;Integrated Security=True;");
         }
         
     }
