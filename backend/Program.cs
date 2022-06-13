@@ -11,12 +11,10 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
- builder.Services.AddDbContext<Contexto>(
-     options => options.UseSqlServer("ConnectionString")
-//     // options => options.UseSqlServer("Data Source=GZTVIX-BDHM01;Integrated Security=True;")
- );
-
 var app = builder.Build();
+
+builder.Services.AddDbContext<Contexto>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionString")));
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

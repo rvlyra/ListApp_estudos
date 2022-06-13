@@ -25,6 +25,12 @@ _Dependências @backend:_
 - https://www.nuget.org/
 - https://www.npmjs.com/
 
+__Para resolver conflitos de conexão:__
+- https://docs.microsoft.com/pt-br/aspnet/core/tutorials/first-mvc-app/working-with-sql?view=aspnetcore-6.0&tabs=visual-studio-code
+
+__Problemas com o arquivo Program.cs:__
+- https://docs.microsoft.com/pt-br/ef/core/cli/dbcontext-creation?tabs=dotnet-core-cli
+
 Gerador de gitignore:
 - https://www.toptal.com/developers/gitignore
 
