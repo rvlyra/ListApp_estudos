@@ -1,5 +1,7 @@
+using System;
 using Microsoft.EntityFrameworkCore;
 using backend.Models;
+using Microsoft.Extensions;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -9,9 +11,10 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<Contexto>(
-    options => options.UseSqlServer("Data Source=GZTVIX-BDHM01;Integrated Security=True;")
-);
+ builder.Services.AddDbContext<Contexto>(
+     options => options.UseSqlServer("ConnectionString")
+//     // options => options.UseSqlServer("Data Source=GZTVIX-BDHM01;Integrated Security=True;")
+ );
 
 var app = builder.Build();
 

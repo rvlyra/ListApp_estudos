@@ -12,7 +12,7 @@ namespace backend.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=GZTVIX-BDHM01;Integrated Security=True;");
+            optionsBuilder.UseSqlServer("DefaultConnection");
         }
         
     }
