@@ -6,35 +6,37 @@
 ### Angular ###
 ## Angular ##
 # compiled output
-dist/
-tmp/
-app/**/*.js
-app/**/*.js.map
+frontend/dist/
+frontend/tmp/
+frontend/app/**/*.js
+frontend/app/**/*.js.map
 
 # dependencies
-node_modules/
-bower_components/
+frontend/node_modules/
+frontend/bower_components/
 
 # IDEs and editors
-.idea/
+frontend/.idea/
 
 # misc
-.sass-cache/
-connect.lock/
-coverage/
-libpeerconnection.log/
-npm-debug.log
-testem.log
-typings/
-.angular/
+frontend/.sass-cache/
+frontend/connect.lock/
+frontend/coverage/
+frontend/libpeerconnection.log/
+frontend/npm-debug.log
+frontend/testem.log
+frontend/typings/
+frontend/.angular/
 
+frontend/*.json
+frontend/package-lock.json
 # e2e
-e2e/*.js
-e2e/*.map
+frontend/e2e/*.js
+frontend/e2e/*.map
 
 # System Files
 .DS_Store/
-
+frontend/.DS_Store/
 # End of https://www.toptal.com/developers/gitignore/api/angular
 
 # CSharp
@@ -50,36 +52,37 @@ e2e/*.map
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
 # User-specific files
-*.rsuser
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
+backend/*.rsuser
+backend/*.suo
+backend/*.user
+backend/*.userosscache
+backend/*.sln.docstates
 
 # User-specific files (MonoDevelop/Xamarin Studio)
-*.userprefs
+backend/*.userprefs
 
 # Mono auto generated files
-mono_crash.*
+backend/mono_crash.*
 
 # Build results
-[Dd]ebug/
-[Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
-x64/
-x86/
-[Ww][Ii][Nn]32/
-[Aa][Rr][Mm]/
-[Aa][Rr][Mm]64/
-bld/
-[Bb]in/
-[Oo]bj/
-[Ll]og/
-[Ll]ogs/
+backend/[Dd]ebug/
+backend/[Dd]ebugPublic/
+backend/[Rr]elease/
+backend/[Rr]eleases/
+backend/x64/
+backend/x86/
+backend/[Ww][Ii][Nn]32/
+backend/[Aa][Rr][Mm]/
+backend/[Aa][Rr][Mm]64/
+backend/bld/
+backend/[Bb]in/
+backend/[Oo]bj/
+backend/[Ll]og/
+backend/[Ll]ogs/
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
+.vscode
 # Uncomment if you have tasks that create the project's static files in wwwroot
 #wwwroot/
 
@@ -87,32 +90,32 @@ bld/
 Generated\ Files/
 
 # MSTest test Results
-[Tt]est[Rr]esult*/
-[Bb]uild[Ll]og.*
+backend/[Tt]est[Rr]esult*/
+backend/[Bb]uild[Ll]og.*
 
 # NUnit
-*.VisualState.xml
-TestResult.xml
-nunit-*.xml
+backend/*.VisualState.xml
+backend/TestResult.xml
+backend/nunit-*.xml
 
 # Build Results of an ATL Project
-[Dd]ebugPS/
-[Rr]eleasePS/
-dlldata.c
+backend/[Dd]ebugPS/
+backend/[Rr]eleasePS/
+backend/dlldata.c
 
 # Benchmark Results
-BenchmarkDotNet.Artifacts/
+backend/BenchmarkDotNet.Artifacts/
 
 # .NET Core
-project.lock.json
-project.fragment.lock.json
-artifacts/
+backend/project.lock.json
+backend/project.fragment.lock.json
+backend/artifacts/
 
 # ASP.NET Scaffolding
-ScaffoldingReadMe.txt
+backend/ScaffoldingReadMe.txt
 
 # StyleCop
-StyleCopReport.xml
+backend/StyleCopReport.xml
 
 # Files built by Visual Studio
 *_i.c
@@ -451,13 +454,13 @@ FodyWeavers.xsd
 
 ### Node ###
 # Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-lerna-debug.log*
-.pnpm-debug.log*
+backend/logs
+backend/*.log
+backend/npm-debug.log*
+backend/yarn-debug.log*
+backend/yarn-error.log*
+backend/lerna-debug.log*
+backend/.pnpm-debug.log*
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
@@ -488,14 +491,15 @@ bower_components
 .lock-wscript
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
-build/Release
+backend/build/Release
 
 # Dependency directories
-node_modules/
-jspm_packages/
+backend/node_modules/
+backend/jspm_packages/
+backend/appsettings.json
 
 # Snowpack dependency directory (https://snowpack.dev/)
-web_modules/
+backend/web_modules/
 
 # TypeScript cache
 *.tsbuildinfo

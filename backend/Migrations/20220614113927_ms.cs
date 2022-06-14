@@ -4,7 +4,7 @@
 
 namespace backend.Migrations
 {
-    public partial class criandoDB : Migration
+    public partial class ms : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

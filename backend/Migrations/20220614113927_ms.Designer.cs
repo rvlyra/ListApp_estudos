@@ -11,8 +11,8 @@ using backend.Models;
 namespace backend.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20220613180323_criandoDB")]
-    partial class criandoDB
+    [Migration("20220614113927_ms")]
+    partial class ms
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
