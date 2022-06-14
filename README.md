@@ -20,13 +20,27 @@ _Dependências @backend:_
 
     dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 
+
+__Principais comandos:__
+    
+Para gerar as migrations: 
+    dotnet ef migrations add mgInit --context Contexto
+Para criar ou atualizar o banco:
+
+    dotnet ef database update -- --environment Production
+
+
 @Fontes:
+- https://docs.microsoft.com/pt-br/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli
 - https://docs.microsoft.com/pt-br/ef/core/get-started/overview/install
 - https://www.nuget.org/
 - https://www.npmjs.com/
 - https://docs.microsoft.com/pt-br/dotnet/framework/data/adonet/connection-string-syntax
 - https://stackoverflow.com/questions/8243008/format-of-the-initialization-string-does-not-conform-to-specification-starting-a
 - https://www.c-sharpcorner.com/article/entity-framework-core-in-docker-container-part-ii-sqlite/
+- https://docs.microsoft.com/pt-br/aspnet/core/data/ef-mvc/migrations?view=aspnetcore-6.0
+- https://docs.microsoft.com/en-us/dotnet/architecture/modernize-desktop/example-migration
+- https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/applying?tabs=dotnet-core-cli
 
 __Para resolver conflitos de conexão:__
 - https://docs.microsoft.com/pt-br/aspnet/core/tutorials/first-mvc-app/working-with-sql?view=aspnetcore-6.0&tabs=visual-studio-code

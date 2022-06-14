@@ -11,14 +11,14 @@ using backend.Models;
 namespace backend.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20220614113927_ms")]
-    partial class ms
+    [Migration("20220614221405_mgInit")]
+    partial class mgInit
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.5")
+                .HasAnnotation("ProductVersion", "6.0.6")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);

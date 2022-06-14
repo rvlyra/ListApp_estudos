@@ -4,7 +4,7 @@
 
 namespace backend.Migrations
 {
-    public partial class ms : Migration
+    public partial class mgInit : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
